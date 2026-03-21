@@ -6,6 +6,14 @@
 (function () {
     'use strict';
 
+    // ===== DYNAMIC DATES =====
+    var ANNO_FONDAZIONE = 1997;
+    var annoCorrente = new Date().getFullYear();
+    var anniExp = document.getElementById('anniEsperienza');
+    if (anniExp) anniExp.textContent = (annoCorrente - ANNO_FONDAZIONE) + '+';
+    var annoCopy = document.getElementById('annoCopyright');
+    if (annoCopy) annoCopy.textContent = annoCorrente;
+
     // ===== NAVBAR SCROLL =====
     var navbar = document.getElementById('navbar');
     var lastScrollY = 0;
