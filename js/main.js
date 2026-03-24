@@ -186,15 +186,15 @@
 
         var isOpen = false;
 
-        if (day >= 1 && day <= 5) {
-            // Lun-Ven: 9:00-13:00 / 16:30-20:00
-            if ((currentMinutes >= 540 && currentMinutes < 780) ||
-                (currentMinutes >= 990 && currentMinutes < 1200)) {
+        if (day === 1) {
+            // Lunedi: solo pomeriggio 16:30-19:30
+            if (currentMinutes >= 990 && currentMinutes < 1170) {
                 isOpen = true;
             }
-        } else if (day === 6) {
-            // Sabato: 9:00-13:00
-            if (currentMinutes >= 540 && currentMinutes < 780) {
+        } else if (day >= 2 && day <= 6) {
+            // Mar-Sab: 9:30-13:00 / 16:30-19:30
+            if ((currentMinutes >= 570 && currentMinutes < 780) ||
+                (currentMinutes >= 990 && currentMinutes < 1170)) {
                 isOpen = true;
             }
         }
