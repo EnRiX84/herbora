@@ -298,6 +298,14 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--terracotta);
 }
 
+.navbar-social-wa {
+    color: #25D366;
+}
+
+.navbar-social-wa:hover {
+    color: #128C7E;
+}
+
 .navbar-cta {
     display: inline-flex;
     align-items: center;
@@ -2079,7 +2087,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar-links,
-    .navbar-cta,
     .navbar-social {
         display: none;
     }
