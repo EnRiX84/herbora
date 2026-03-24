@@ -33,7 +33,6 @@
     // ===== MOBILE MENU =====
     var navbarToggle = document.getElementById('navbarToggle');
     var mobileOverlay = document.getElementById('mobileOverlay');
-    var mobileClose = document.getElementById('mobileClose');
     var mobileLinks = document.querySelectorAll('.mobile-link');
 
     function openMobileMenu() {
@@ -56,10 +55,6 @@
                 openMobileMenu();
             }
         });
-    }
-
-    if (mobileClose) {
-        mobileClose.addEventListener('click', closeMobileMenu);
     }
 
     // Chiudi overlay toccando lo sfondo

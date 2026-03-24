@@ -374,23 +374,6 @@ h1, h2, h3, h4, h5, h6 {
     pointer-events: none;
 }
 
-.mobile-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    font-size: 2rem;
-    color: var(--herbora-dark);
-    background: none;
-    border: none;
-    z-index: 10;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
 .mobile-nav-links {
     display: flex;
     flex-direction: column;
@@ -412,18 +395,28 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--terracotta);
 }
 
-.mobile-link-wa {
+.mobile-social {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-family: var(--font-body);
-    font-size: 1.1rem;
-    font-weight: 600;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.mobile-social-link {
+    color: var(--herbora-green);
+    transition: color 0.3s ease;
+}
+
+.mobile-social-link:hover {
+    color: var(--terracotta);
+}
+
+.mobile-social-wa {
     color: #25D366;
-    margin-top: 1rem;
-    padding: 12px 24px;
-    border: 2px solid #25D366;
-    border-radius: 50px;
+}
+
+.mobile-social-wa:hover {
+    color: #128C7E;
 }
 
 /* ===== HERO ===== */
