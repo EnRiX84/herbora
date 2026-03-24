@@ -47,7 +47,13 @@
     }
 
     if (navbarToggle) {
-        navbarToggle.addEventListener('click', openMobileMenu);
+        navbarToggle.addEventListener('click', function () {
+            if (mobileOverlay.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
     }
 
     if (mobileClose) {
