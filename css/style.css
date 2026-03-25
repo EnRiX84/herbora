@@ -645,7 +645,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-experience-card {
     position: absolute;
-    top: -20px;
+    bottom: -10px;
     right: -30px;
     background: #fff;
     padding: 16px 22px;
@@ -2054,7 +2054,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-experience-card {
-        top: -15px;
+        bottom: -10px;
         right: -20px;
     }
 
@@ -2161,7 +2161,7 @@ h1, h2, h3, h4, h5, h6 {
         right: auto;
         left: 50%;
         transform: translateX(-50%);
-        top: -25px;
+        bottom: -20px;
     }
 
     .section-title {
