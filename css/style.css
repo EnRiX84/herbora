@@ -895,21 +895,20 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
-/* ===== SERVIZI (Masonry) ===== */
+/* ===== SERVIZI (Grid uniforme) ===== */
 .servizi {
     position: relative;
     padding: 6rem 0 8rem;
     background: var(--cream);
 }
 
-.servizi-masonry {
+.servizi-grid {
     max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    grid-auto-flow: dense;
 }
 
 .servizio-card {
@@ -920,6 +919,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid transparent;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .servizio-card:hover {
@@ -932,29 +933,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(5deg);
 }
 
-.servizio-lg {
-    grid-row: span 2;
-    padding: 2.5rem;
-}
-
-.servizio-md {
-    /* default size */
-}
-
-.servizio-sm {
-    padding: 1.5rem;
-}
-
-.servizio-wide {
-    grid-column: span 2;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
-}
-
 .servizio-icon {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     margin-bottom: 1.2rem;
     flex-shrink: 0;
 }
@@ -965,39 +946,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .servizio-title {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--herbora-dark);
     margin-bottom: 0.6rem;
 }
 
 .servizio-desc {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     color: var(--text-medium);
     line-height: 1.7;
-}
-
-.servizio-lg .servizio-icon {
-    width: 80px;
-    height: 80px;
-}
-
-.servizio-lg .servizio-title {
-    font-size: 1.5rem;
-}
-
-.servizio-lg .servizio-desc {
-    font-size: 1rem;
-}
-
-.servizio-wide .servizio-icon {
-    width: 72px;
-    height: 72px;
-    margin-bottom: 0;
-}
-
-.servizio-wide-content {
-    flex: 1;
 }
 
 /* ===== PRODOTTI / CAROUSEL ===== */
@@ -2115,16 +2073,8 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .servizi-masonry {
+    .servizi-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .servizio-lg {
-        grid-row: span 1;
-    }
-
-    .servizio-wide {
-        grid-column: span 2;
     }
 
     .preparazioni-container {
@@ -2231,17 +2181,8 @@ h1, h2, h3, h4, h5, h6 {
         gap: 1.5rem;
     }
 
-    .servizi-masonry {
+    .servizi-grid {
         grid-template-columns: 1fr;
-    }
-
-    .servizio-wide {
-        grid-column: span 1;
-        flex-direction: column;
-    }
-
-    .servizio-wide .servizio-icon {
-        margin-bottom: 1rem;
     }
 
     .carousel-card {
