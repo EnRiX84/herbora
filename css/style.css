@@ -958,6 +958,343 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
 }
 
+/* ===== FITODIMA (Homepage) ===== */
+.fitodima {
+    position: relative;
+    padding: 6rem 0 8rem;
+    background: var(--sage-light);
+}
+
+.fitodima-grid {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.fitodima-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.fitodima-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(45, 59, 46, 0.12);
+    border-color: var(--sage);
+}
+
+.fitodima-card-image {
+    background: var(--cream);
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fitodima-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fitodima-card-body {
+    padding: 1.5rem 2rem 2rem;
+}
+
+.fitodima-card-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    background: var(--terracotta);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 50px;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.8rem;
+}
+
+.fitodima-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.fitodima-card p {
+    font-size: 0.92rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.fitodima-card-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.fitodima-card-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.88rem;
+    color: var(--text-medium);
+}
+
+.fitodima-card-highlights li svg {
+    flex-shrink: 0;
+    color: var(--herbora-green);
+}
+
+/* ===== PRODUCT PAGE ===== */
+.product-hero {
+    position: relative;
+    padding: calc(var(--nav-height) + 3rem) 2rem 5rem;
+    background: var(--sage-light);
+}
+
+.product-hero-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 3rem;
+    align-items: center;
+}
+
+.product-hero-image {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(45, 59, 46, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-hero-image img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.product-hero-badges {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.product-badge-line {
+    display: inline-block;
+    padding: 4px 14px;
+    background: rgba(46, 125, 80, 0.1);
+    color: var(--herbora-green);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.product-badge-type {
+    display: inline-block;
+    padding: 4px 14px;
+    background: var(--terracotta);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.product-hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.product-hero-content > p {
+    font-size: 1.05rem;
+    color: var(--text-medium);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 540px;
+}
+
+.product-hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-ingredients {
+    padding: 5rem 0;
+    background: var(--cream);
+}
+
+.product-ingredients-grid {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.ingredient-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.ingredient-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(45, 59, 46, 0.08);
+    border-color: var(--sage);
+}
+
+.ingredient-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1rem;
+    background: var(--sage-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredient-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--herbora-green);
+}
+
+.ingredient-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.ingredient-card p {
+    font-size: 0.85rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.product-infographic {
+    padding: 5rem 0;
+    background: var(--sage-light);
+}
+
+.product-infographic-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.product-infographic-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(45, 59, 46, 0.08);
+}
+
+.product-infographic-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-usage-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+}
+
+.product-usage-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.product-usage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-usage-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+.product-usage-list li svg {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--terracotta);
+}
+
+.product-disclaimer {
+    font-size: 0.8rem;
+    color: var(--text-medium);
+    opacity: 0.7;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.product-target {
+    padding: 5rem 0;
+    background: var(--cream);
+}
+
+.product-target-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.product-target-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.product-target-card p {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.product-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--herbora-green);
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.product-back-link:hover {
+    color: var(--terracotta);
+}
+
 /* ===== PRODOTTI / CAROUSEL ===== */
 .prodotti {
     position: relative;
@@ -2092,6 +2429,40 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
 
+    .fitodima-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .product-hero-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .product-hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-hero-ctas {
+        justify-content: center;
+    }
+
+    .product-ingredients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-infographic-container {
+        grid-template-columns: 1fr;
+    }
+
     .footer-container {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
@@ -2182,6 +2553,22 @@ h1, h2, h3, h4, h5, h6 {
 
     .servizi-grid {
         grid-template-columns: 1fr;
+    }
+
+    .fitodima-card-image {
+        height: 220px;
+    }
+
+    .product-hero-badges {
+        justify-content: center;
+    }
+
+    .product-ingredients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-target-card {
+        padding: 2rem 1.5rem;
     }
 
     .carousel-card {
